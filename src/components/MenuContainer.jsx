@@ -17,7 +17,7 @@ const MenuContainer = () => {
             our menus
           </h2>
           <div className="flex justify-between flex-wrap py-10">
-            {allFood.map((food) => (
+            {allFood?.map((food) => (
               <MenuCard key={food.id} food={food} />
             ))}
           </div>
